@@ -1,0 +1,153 @@
+/* ===================================================================
+   DEEP MIND IT SOLUTIONS — ANIMATION LIBRARY
+=================================================================== */
+
+@keyframes spin{to{transform:rotate(360deg)}}
+
+@keyframes floatY{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-16px)}
+}
+
+@keyframes floatX{
+  0%,100%{transform:translateX(0)}
+  50%{transform:translateX(12px)}
+}
+
+@keyframes pulseGlow{
+  0%,100%{box-shadow:0 0 18px rgba(0,212,255,.35)}
+  50%{box-shadow:0 0 38px rgba(0,212,255,.65)}
+}
+
+@keyframes gradientWave{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+@keyframes marquee{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
+}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(16px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+@keyframes scaleIn{
+  from{opacity:0;transform:scale(.92)}
+  to{opacity:1;transform:scale(1)}
+}
+
+@keyframes orbit{
+  from{transform:rotate(0deg)}
+  to{transform:rotate(360deg)}
+}
+
+@keyframes dashFlow{
+  to{stroke-dashoffset:-200}
+}
+
+@keyframes nodePulse{
+  0%,100%{r:3.2;opacity:.85}
+  50%{r:5;opacity:1}
+}
+
+@keyframes ringExpand{
+  0%{transform:scale(.7);opacity:.7}
+  100%{transform:scale(1.6);opacity:0}
+}
+
+@keyframes shimmer{
+  0%{background-position:-200% 0}
+  100%{background-position:200% 0}
+}
+
+@keyframes textReveal{
+  from{opacity:0;transform:translateY(100%)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+@keyframes counterTick{
+  from{opacity:.4}
+  to{opacity:1}
+}
+
+@keyframes drift{
+  0%{transform:translate(0,0)}
+  33%{transform:translate(14px,-18px)}
+  66%{transform:translate(-10px,10px)}
+  100%{transform:translate(0,0)}
+}
+
+@keyframes borderRotate{
+  to{--angle:360deg}
+}
+
+@property --angle{
+  syntax:'<angle>';
+  initial-value:0deg;
+  inherits:false;
+}
+
+/* ---------- reusable animation classes ---------- */
+.anim-float{animation:floatY 5s ease-in-out infinite}
+.anim-float-slow{animation:floatY 8s ease-in-out infinite}
+.anim-drift{animation:drift 9s ease-in-out infinite}
+.anim-pulse-glow{animation:pulseGlow 3s ease-in-out infinite}
+.anim-orbit{animation:orbit 24s linear infinite}
+.anim-orbit-rev{animation:orbit 30s linear infinite reverse}
+
+/* gradient text wave (used sparingly on signature headline word) */
+.gradient-wave-text{
+  background:linear-gradient(90deg,var(--blue),var(--cyan),var(--glow),var(--cyan),var(--blue));
+  background-size:300% 100%;
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:gradientWave 6s ease infinite;
+}
+
+/* animated gradient border wrapper (used on the hero glass panel) */
+.glow-border{position:relative;border-radius:var(--radius-lg)}
+.glow-border::before{
+  content:'';position:absolute;inset:-1px;border-radius:inherit;z-index:-1;
+  background:conic-gradient(from var(--angle),rgba(0,136,255,.05),var(--cyan) 18%,rgba(0,136,255,.05) 36%);
+  animation:borderRotate 6s linear infinite;
+}
+
+/* shine hover sweep for cards that opt in */
+.shine-hover{position:relative;overflow:hidden}
+.shine-hover::after{
+  content:'';position:absolute;top:0;left:-150%;width:60%;height:100%;
+  background:linear-gradient(115deg,transparent,rgba(255,255,255,.16),transparent);
+  transform:skewX(-18deg);
+}
+.shine-hover:hover::after{
+  left:150%;transition:left .9s var(--ease);
+}
+
+/* text reveal on load (hero headline lines) */
+.line-reveal{overflow:hidden;display:block}
+.line-reveal span{display:inline-block;animation:textReveal .9s var(--ease) both}
+
+/* fade-in utility (page transition target) */
+.page-fade{animation:fadeUp .7s var(--ease) both}
+
+/* loading bar shimmer used inside loader */
+.loader-label{
+  margin-top:1.3rem;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-secondary);
+  background:linear-gradient(90deg,var(--text-secondary) 40%,#fff 50%,var(--text-secondary) 60%);
+  background-size:200% 100%;-webkit-background-clip:text;background-clip:text;
+  animation:shimmer 2s linear infinite;
+}
+
+/* page transition overlay (between in-site navigations) */
+.page-transition{
+  position:fixed;inset:0;z-index:9998;background:var(--bg);
+  transform:translateY(100%);transition:transform .55s var(--ease);
+  pointer-events:none;
+}
+.page-transition.active{transform:translateY(0)}
+
+/* counter number animation hook (JS toggles via class) */
+.stat-num.counting{animation:counterTick .4s ease both}
