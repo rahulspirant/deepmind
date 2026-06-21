@@ -1,557 +1,817 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Deep Mind IT Solutions | Enterprise Cloud, Cyber Security &amp; Network Infrastructure</title>
-<meta name="description" content="Deep Mind IT Solutions delivers enterprise-grade cloud, cyber security, networking and digital transformation services trusted by businesses across India.">
-<meta name="keywords" content="enterprise IT solutions, cloud services, cyber security, network infrastructure, managed IT services, structured cabling, data center solutions">
-<meta property="og:title" content="Deep Mind IT Solutions | Empowering Your Digital Future">
-<meta property="og:description" content="Enterprise Cloud, Cyber Security, Networking and Digital Transformation Solutions.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230088FF'/%3E%3Cpath d='M7 16h10a3.5 3.5 0 0 0 .4-7A5 5 0 0 0 7.6 8 3.5 3.5 0 0 0 7 16Z' fill='white'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config={theme:{extend:{colors:{bg:'#030712',bgsec:'#081A34',blue:'#0088FF',cyan:'#00D4FF',glow:'#00FFFF'},fontFamily:{sans:['Inter','Poppins','sans-serif']}}}}
-</script>
-<link rel="stylesheet" href="./style.css">
-<link rel="stylesheet" href="./animation.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Deep Mind IT Solutions",
-  "url": "https://www.deepmindits.com",
-  "description": "Enterprise cloud, cyber security, networking and digital transformation solutions provider.",
-  "address": {"@type":"PostalAddress","addressLocality":"New Delhi","addressCountry":"IN"}
-}
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deep Mind IT Solutions | Enterprise Cloud, Cyber Security & Network Infrastructure</title>
+  <meta name="description" content="Deep Mind IT Solutions delivers enterprise-grade cloud, cyber security, networking and digital transformation services trusted by businesses across India.">
+  <meta name="keywords" content="enterprise IT solutions, cloud services, cyber security, network infrastructure, managed IT services, structured cabling, data center solutions">
+  <meta property="og:title" content="Deep Mind IT Solutions | Empowering Your Digital Future">
+  <meta property="og:description" content="Enterprise Cloud, Cyber Security, Networking and Digital Transformation Solutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230088FF'/%3E%3Cpath d='M7 16h10a3.5 3.5 0 0 0 .4-7A5 5 0 0 0 7.6 8 3.5 3.5 0 0 0 7 16Z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Deep Mind IT Solutions",
+    "url": "https://www.deepmindits.com",
+    "description": "Enterprise cloud, cyber security, networking and digital transformation solutions provider.",
+    "address": {"@type":"PostalAddress","addressLocality":"New Delhi","addressCountry":"IN"}
+  }
+  </script>
 </head>
 <body>
 
-<!-- ================= LOADER ================= -->
-<div class="loader">
-  <div style="display:flex;flex-direction:column;align-items:center">
-    <div class="loader-ring"></div>
-    <div class="loader-label">Initializing Deep Mind</div>
-  </div>
-</div>
-<div class="page-transition"></div>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<!-- ================= NAVBAR ================= -->
-<header class="navbar">
-  <div class="container nav-inner">
-    <a href="index.html" class="brand">
-      <span class="brand-mark">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M7 17h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.5 4 4 0 0 0 7 17Z" stroke="white" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="13" r="1.3" fill="white"/></svg>
-      </span>
-      <span class="brand-text">Deep Mind<small>IT Solutions</small></span>
-    </a>
-
-    <ul class="nav-links">
-      <li><a href="index.html" class="nav-link">Home</a></li>
-      <li><a href="about.html" class="nav-link">About</a></li>
-      <li><a href="cloud.html" class="nav-link">Cloud</a></li>
-      <li class="has-mega">
-        <a href="services.html" class="nav-link">Services
-          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-        </a>
-        <div class="mega-menu">
-          <a href="services.html#network" class="mega-item">
-            <span class="mega-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7.8 7.6 10.5 16M16.2 7.6 13.5 16M8.5 6h7"/></svg></span>
-            <div><h4>Network Infrastructure</h4><p>Resilient enterprise networks</p></div>
-          </a>
-          <a href="services.html#cloud" class="mega-item">
-            <span class="mega-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17h10a4 4 0 0 0 .4-8 5.5 5.5 0 0 0-10.6.3A4 4 0 0 0 7 17Z"/></svg></span>
-            <div><h4>Cloud Solutions</h4><p>Hybrid &amp; multi-cloud builds</p></div>
-          </a>
-          <a href="services.html#security" class="mega-item">
-            <span class="mega-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9.5 12l2 2 3.5-4"/></svg></span>
-            <div><h4>Cyber Security</h4><p>Threat defense &amp; compliance</p></div>
-          </a>
-          <a href="services.html#firewall" class="mega-item">
-            <span class="mega-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9h16M9 9v11"/></svg></span>
-            <div><h4>Firewall Solutions</h4><p>Perimeter &amp; app-layer defense</p></div>
-          </a>
-          <a href="services.html#managed" class="mega-item">
-            <span class="mega-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="3"/><path d="M19.4 13a7.6 7.6 0 0 0 0-2l2-1.5-2-3.4-2.3.9a7.7 7.7 0 0 0-1.7-1l-.3-2.5h-4l-.3 2.5a7.7 7.7 0 0 0-1.7 1l-2.3-.9-2 3.4 2 1.5a7.6 7.6 0 0 0 0 2l-2 1.6 2 3.4 2.3-.9c.5.4 1.1.8 1.7 1l.3 2.4h4l.3-2.4c.6-.2 1.2-.6 1.7-1l2.3.9 2-3.4-2-1.6Z"/></svg></span>
-            <div><h4>Managed IT Services</h4><p>Proactive 24/7 operations</p></div>
-          </a>
-          <a href="services.html#datacenter" class="mega-item">
-            <span class="mega-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="5" y="3" width="14" height="8" rx="1.5"/><rect x="5" y="13" width="14" height="8" rx="1.5"/><path d="M8 7h.01M8 17h.01"/></svg></span>
-            <div><h4>Data Center Solutions</h4><p>High-availability infrastructure</p></div>
-          </a>
-        </div>
-      </li>
-      <li><a href="products.html" class="nav-link">Products</a></li>
-      <li><a href="clintele.html" class="nav-link">Clientele</a></li>
-      <li><a href="contact.html" class="nav-link">Contact</a></li>
-    </ul>
-
-    <div class="nav-cta">
-      <a href="contact.html" class="btn btn-ghost btn-sm"><span>Talk to an Expert</span></a>
-      <a href="contact.html" class="btn btn-primary btn-sm"><span>Book a Demo</span></a>
-    </div>
-
-    <button class="hamburger" aria-label="Open menu" aria-expanded="false"><span></span></button>
-  </div>
-</header>
-
-<!-- ================= MOBILE NAV ================= -->
-<div class="mobile-scrim"></div>
-<nav class="mobile-panel">
-  <a href="index.html" class="m-link">Home</a>
-  <a href="about.html" class="m-link">About</a>
-  <a href="cloud.html" class="m-link">Cloud</a>
-  <div class="m-group">
-    <a href="#" class="m-link">Services <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></a>
-    <div class="m-sub">
-      <a href="services.html#network">Network Infrastructure</a>
-      <a href="services.html#cloud">Cloud Solutions</a>
-      <a href="services.html#security">Cyber Security</a>
-      <a href="services.html#firewall">Firewall Solutions</a>
-      <a href="services.html#managed">Managed IT Services</a>
+  <!-- ================= LOADER ================= -->
+  <div class="loader" role="status" aria-label="Loading">
+    <div style="display:flex;flex-direction:column;align-items:center">
+      <div class="loader-ring"></div>
+      <div class="loader-label">Initializing Deep Mind</div>
     </div>
   </div>
-  <a href="products.html" class="m-link">Products</a>
-  <a href="clintele.html" class="m-link">Clientele</a>
-  <a href="contact.html" class="m-link">Contact</a>
-  <div class="nav-cta">
-    <a href="contact.html" class="btn btn-ghost"><span>Talk to an Expert</span></a>
-    <a href="contact.html" class="btn btn-primary"><span>Book a Demo</span></a>
-  </div>
-</nav>
+  <div class="page-transition"></div>
 
-<main class="page-fade">
-
-<!-- ================= HERO ================= -->
-<section class="hero">
-  <canvas class="particle-canvas"></canvas>
-  <div class="container hero-grid">
-    <div class="hero-content">
-      <div class="eyebrow">Smart Solutions, Stronger Businesses</div>
-      <h1>
-        <span class="line-reveal"><span>Empowering Your</span></span>
-        <span class="line-reveal"><span class="gradient-wave-text">Digital Future</span></span>
-      </h1>
-      <p class="hero-sub">End-to-end IT infrastructure, cloud, network, security and AV solutions that drive growth, resilience and innovation for the modern enterprise.</p>
-      <div class="hero-actions">
-        <a href="contact.html" class="btn btn-primary"><span>Book a Demo</span> <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a href="services.html" class="btn btn-ghost"><span>Explore Solutions</span></a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat"><div class="stat-num"><span data-count="15">0</span><span>+</span></div><div class="stat-label">Years of Excellence</div></div>
-        <div class="stat"><div class="stat-num"><span data-count="500">0</span><span>+</span></div><div class="stat-label">Projects Delivered</div></div>
-        <div class="stat"><div class="stat-num"><span data-count="200">0</span><span>+</span></div><div class="stat-label">Happy Clients</div></div>
-        <div class="stat"><div class="stat-num">24<span>/7</span></div><div class="stat-label">Support Available</div></div>
-      </div>
-    </div>
-
-    <div class="hero-visual">
-      <div class="hero-visual-panel glass glow-border">
-        <div class="hero-image-shell">
-          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80" alt="Technology infrastructure and cybersecurity monitoring" loading="eager">
-          <div class="hero-image-overlay"></div>
-          <div class="hero-badge badge-left">Cloud &amp; Security</div>
-          <div class="hero-badge badge-right">24/7 Support</div>
-          <div class="hero-stat-pill"><strong>99.98%</strong><span>Uptime SLA</span></div>
-        </div>
-        <div class="hero-globe-wrap">
-          <svg viewBox="0 0 480 480" width="100%" height="100%" style="max-width:480px">
-            <defs>
-              <radialGradient id="glb" cx="50%" cy="40%" r="60%">
-                <stop offset="0%" stop-color="#00D4FF" stop-opacity=".25"/>
-                <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
-              </radialGradient>
-              <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#0088FF"/>
-                <stop offset="100%" stop-color="#00FFFF"/>
-              </linearGradient>
-            </defs>
-            <circle cx="240" cy="240" r="190" fill="url(#glb)"/>
-            <g stroke="rgba(0,212,255,.35)" stroke-width="1" fill="none">
-              <ellipse cx="240" cy="240" rx="190" ry="60"/>
-              <ellipse cx="240" cy="240" rx="190" ry="120"/>
-              <ellipse cx="240" cy="240" rx="60" ry="190"/>
-              <ellipse cx="240" cy="240" rx="120" ry="190"/>
-              <circle cx="240" cy="240" r="190"/>
-            </g>
-            <g class="anim-orbit" style="transform-origin:240px 240px">
-              <circle cx="240" cy="50" r="4" fill="#00FFFF"/>
-              <circle cx="430" cy="240" r="3" fill="#0088FF"/>
-            </g>
-            <g class="anim-orbit-rev" style="transform-origin:240px 240px">
-              <circle cx="80" cy="180" r="3.5" fill="#00D4FF"/>
-              <circle cx="380" cy="350" r="3" fill="#00D4FF"/>
-            </g>
-            <g stroke="url(#lineGrad)" stroke-width="1.4" fill="none" stroke-dasharray="6 8">
-              <path d="M120 150 L240 240 L360 140"><animate attributeName="stroke-dashoffset" from="0" to="-200" dur="4s" repeatCount="indefinite"/></path>
-              <path d="M110 320 L240 240 L370 330"><animate attributeName="stroke-dashoffset" from="0" to="-200" dur="5s" repeatCount="indefinite"/></path>
-            </g>
-            <circle cx="120" cy="150" r="5" fill="#00D4FF"><animate attributeName="r" values="4;6;4" dur="2.4s" repeatCount="indefinite"/></circle>
-            <circle cx="360" cy="140" r="5" fill="#0088FF"><animate attributeName="r" values="4;6;4" dur="3s" repeatCount="indefinite"/></circle>
-            <circle cx="110" cy="320" r="5" fill="#0088FF"/>
-            <circle cx="370" cy="330" r="5" fill="#00D4FF"/>
-            <circle cx="240" cy="240" r="9" fill="#00FFFF" opacity=".9"/>
-            <circle cx="240" cy="240" r="20" fill="none" stroke="#00FFFF" stroke-width="1.4" opacity=".5">
-              <animate attributeName="r" values="14;38;14" dur="3.2s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" values=".6;0;.6" dur="3.2s" repeatCount="indefinite"/>
-            </circle>
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" role="banner">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="Deep Mind IT Solutions Home">
+        <span class="brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M7 17h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.5 4 4 0 0 0 7 17Z" stroke="white" stroke-width="1.6" stroke-linejoin="round"/>
+            <circle cx="12" cy="13" r="1.3" fill="white"/>
           </svg>
-        </div>
-      </div>
-      <div class="floating-card glass fc-1">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 3v4M12 17v4M5 12H1M23 12h-4M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8M18.4 18.4l-2.8-2.8M8.4 8.4 5.6 5.6"/></svg></span>
-        <div><h5>Network Uptime</h5><p>99.98% guaranteed SLA</p></div>
-      </div>
-      <div class="floating-card glass fc-2">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/></svg></span>
-        <div><h5>Threats Blocked</h5><p>2.4M+ this month</p></div>
-      </div>
-      <div class="floating-card glass fc-3">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M7 17h10a4 4 0 0 0 .4-8 5.5 5.5 0 0 0-10.6.3A4 4 0 0 0 7 17Z"/></svg></span>
-        <div><h5>Cloud Migration</h5><p>Zero downtime delivery</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= TRUSTED BY MARQUEE ================= -->
-<section style="padding:3rem 0">
-  <div class="container reveal">
-    <p class="text-center" style="font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:1.8rem">Trusted by forward-thinking teams across industries</p>
-  </div>
-  <div class="marquee-wrap">
-    <div class="marquee-track">
-      <span class="client-logo">TechFlow</span>
-      <span class="client-logo">Innovatek</span>
-      <span class="client-logo">GlobalCore</span>
-      <span class="client-logo">Nexora</span>
-      <span class="client-logo">Infralink</span>
-      <span class="client-logo">Veridian</span>
-      <span class="client-logo">Skyline</span>
-      <span class="client-logo">Prime Systems</span>
-      <span class="client-logo">Dataviz</span>
-      <span class="client-logo">Alphatech</span>
-    </div>
-  </div>
-</section>
-
-<!-- ================= CORE SERVICES ================= -->
-<section id="services">
-  <div class="container">
-    <div class="section-head center reveal">
-      <div class="eyebrow" style="justify-content:center">Our Core Services</div>
-      <h2>Built for performance, secured by design</h2>
-      <p>A full-stack of enterprise IT capabilities — from the network layer to the application layer — engineered to keep your business resilient, fast and protected.</p>
-    </div>
-
-    <div class="grid grid-3 reveal-stagger">
-      <div class="card shine-hover">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7.8 7.6 10.5 16M16.2 7.6 13.5 16M8.5 6h7"/></svg></div>
-        <h3>Network Infrastructure</h3>
-        <p>Resilient, future-ready networks engineered for low latency and zero-compromise reliability at enterprise scale.</p>
-        <a href="services.html#network" class="card-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-      <div class="card shine-hover">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17h10a4 4 0 0 0 .4-8 5.5 5.5 0 0 0-10.6.3A4 4 0 0 0 7 17Z"/></svg></div>
-        <h3>Cloud Solutions</h3>
-        <p>Hybrid and multi-cloud architectures that scale on demand while keeping cost, performance and governance in balance.</p>
-        <a href="cloud.html" class="card-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-      <div class="card shine-hover">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9.5 12l2 2 3.5-4"/></svg></div>
-        <h3>Cyber Security</h3>
-        <p>Layered threat defense, continuous monitoring and compliance-ready controls that protect what matters most.</p>
-        <a href="services.html#security" class="card-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-      <div class="card shine-hover">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="5" y="3" width="14" height="8" rx="1.5"/><rect x="5" y="13" width="14" height="8" rx="1.5"/><path d="M8 7h.01M8 17h.01"/></svg></div>
-        <h3>Data Center Solutions</h3>
-        <p>High-availability infrastructure design, virtualization and disaster recovery built for business continuity.</p>
-        <a href="services.html#datacenter" class="card-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-      <div class="card shine-hover">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="3"/><path d="M19.4 13a7.6 7.6 0 0 0 0-2l2-1.5-2-3.4-2.3.9a7.7 7.7 0 0 0-1.7-1l-.3-2.5h-4l-.3 2.5a7.7 7.7 0 0 0-1.7 1l-2.3-.9-2 3.4 2 1.5a7.6 7.6 0 0 0 0 2l-2 1.6 2 3.4 2.3-.9c.5.4 1.1.8 1.7 1l.3 2.4h4l.3-2.4c.6-.2 1.2-.6 1.7-1l2.3.9 2-3.4-2-1.6Z"/></svg></div>
-        <h3>Managed IT Services</h3>
-        <p>Proactive monitoring, helpdesk and infrastructure management so your team stays focused on the business.</p>
-        <a href="services.html#managed" class="card-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-      <div class="card shine-hover">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 4h16v12H4z"/><path d="M9 20h6M12 16v4"/></svg></div>
-        <h3>Software &amp; App Development</h3>
-        <p>Custom web, mobile and enterprise software engineered around your workflows, not the other way around.</p>
-        <a href="services.html#software" class="card-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-    </div>
-
-    <div class="text-center mt-2">
-      <a href="services.html" class="btn btn-ghost"><span>View All Services</span> <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= WHY CHOOSE US SPLIT ================= -->
-<section>
-  <div class="container split">
-    <div class="reveal">
-      <div class="media-frame">
-        <img src="https://images.unsplash.com/photo-1573164574511-73c773193279?w=1000&q=80" alt="Enterprise data center with illuminated server racks" loading="lazy" data-fallback>
-      </div>
-    </div>
-    <div class="reveal">
-      <div class="eyebrow">Why Enterprises Choose Us</div>
-      <h2>Infrastructure that scales as fast as your ambition</h2>
-      <p style="margin:1rem 0 1.8rem">We pair certified engineering talent with vendor-grade tooling — Fortinet, Cisco, Palo Alto and AWS among them — to build IT environments that hold up under real-world load.</p>
-      <ul class="checklist">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg> Certified engineers across networking, cloud and security</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg> 24/7 monitoring with proactive incident response</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg> Vendor-neutral architecture tailored to your stack</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg> Transparent SLAs and measurable outcomes</li>
-      </ul>
-      <a href="about.html" class="btn btn-primary mt-2"><span>More About Us</span> <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= PRODUCT CATEGORIES ================= -->
-<section>
-  <div class="container">
-    <div class="section-head center reveal">
-      <div class="eyebrow" style="justify-content:center">Popular Product Categories</div>
-      <h2>Enterprise-grade hardware, sourced and supported</h2>
-      <p>From core infrastructure to AV and surveillance, we supply, deploy and support the equipment your business runs on.</p>
-    </div>
-    <div class="grid grid-4 reveal-stagger">
-      <a href="products.html#servers" class="card text-center shine-hover">
-        <div class="card-icon" style="margin-inline:auto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="4" width="16" height="6" rx="1"/><rect x="4" y="14" width="16" height="6" rx="1"/><path d="M7 7h.01M7 17h.01"/></svg></div>
-        <h3 style="font-size:1.02rem">Servers &amp; Storage</h3>
+        </span>
+        <span class="brand-text">Deep Mind<small>IT Solutions</small></span>
       </a>
-      <a href="products.html#network" class="card text-center shine-hover">
-        <div class="card-icon" style="margin-inline:auto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="9" width="18" height="6" rx="1"/><path d="M7 15v3M12 15v3M17 15v3"/></svg></div>
-        <h3 style="font-size:1.02rem">Switches / Router / Wi-Fi</h3>
-      </a>
-      <a href="products.html#firewall" class="card text-center shine-hover">
-        <div class="card-icon" style="margin-inline:auto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/></svg></div>
-        <h3 style="font-size:1.02rem">Firewall</h3>
-      </a>
-      <a href="products.html#av" class="card text-center shine-hover">
-        <div class="card-icon" style="margin-inline:auto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="12" rx="1.5"/><path d="M8 21h8M12 17v4"/></svg></div>
-        <h3 style="font-size:1.02rem">LEDs &amp; Interactive Panels</h3>
-      </a>
-      <a href="products.html#av" class="card text-center shine-hover">
-        <div class="card-icon" style="margin-inline:auto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 17l5-10 4 6 3-4 6 8" /><circle cx="12" cy="6" r="1.4"/></svg></div>
-        <h3 style="font-size:1.02rem">AV Solutions &amp; KVM Switches</h3>
-      </a>
-      <a href="products.html#ups" class="card text-center shine-hover">
-        <div class="card-icon" style="margin-inline:auto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg></div>
-        <h3 style="font-size:1.02rem">UPS Power</h3>
-      </a>
-      <a href="products.html#projectors" class="card text-center shine-hover">
-        <div class="card-icon" style="margin-inline:auto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="7" width="14" height="9" rx="2"/><circle cx="9" cy="11.5" r="2.4"/><path d="M16 10l6-2v8l-6-2Z"/></svg></div>
-        <h3 style="font-size:1.02rem">Projectors</h3>
-      </a>
-      <a href="products.html#cctv" class="card text-center shine-hover">
-        <div class="card-icon" style="margin-inline:auto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 7l8-3 8 3v3l-8 3-8-3Z"/><path d="M11 13v7M9 21h6"/></svg></div>
-        <h3 style="font-size:1.02rem">CCTV Surveillance</h3>
-      </a>
-    </div>
-  </div>
-</section>
 
-<!-- ================= INDUSTRIES WE SERVE ================= -->
-<section style="padding-top:0">
-  <div class="container glass" style="padding:3rem 2.5rem">
-    <div class="section-head reveal" style="margin-bottom:1.8rem">
-      <div class="eyebrow">Industries We Serve</div>
-      <h2 style="font-size:clamp(1.6rem,2.6vw,2.1rem)">Domain-aware IT, not one-size-fits-all</h2>
-    </div>
-    <div class="grid grid-4" style="gap:1rem">
-      <div class="pill" style="text-align:center;padding:1rem">Corporate</div>
-      <div class="pill" style="text-align:center;padding:1rem">Education</div>
-      <div class="pill" style="text-align:center;padding:1rem">Healthcare</div>
-      <div class="pill" style="text-align:center;padding:1rem">Manufacturing</div>
-      <div class="pill" style="text-align:center;padding:1rem">Government</div>
-      <div class="pill" style="text-align:center;padding:1rem">Retail</div>
-      <div class="pill" style="text-align:center;padding:1rem">BFSI</div>
-      <div class="pill" style="text-align:center;padding:1rem">Hospitality</div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= TEAM TEASER ================= -->
-<section>
-  <div class="container">
-    <div class="section-head center reveal">
-      <div class="eyebrow" style="justify-content:center">Meet Our Core Team</div>
-      <h2>The people behind every deployment</h2>
-    </div>
-    <div class="grid grid-4 reveal-stagger">
-      <div class="team-card">
-        <div class="team-photo"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="Rakesh Sharma, Managing Director" loading="lazy" data-fallback></div>
-        <h4>Rakesh Sharma</h4><span>Managing Director</span>
-      </div>
-      <div class="team-card">
-        <div class="team-photo"><img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=80" alt="Neha Verma, Director Operations" loading="lazy" data-fallback></div>
-        <h4>Neha Verma</h4><span>Director — Operations</span>
-      </div>
-      <div class="team-card">
-        <div class="team-photo"><img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&q=80" alt="Arjun Mehta, Head of Solutions" loading="lazy" data-fallback></div>
-        <h4>Arjun Mehta</h4><span>Head — Solutions</span>
-      </div>
-      <div class="team-card">
-        <div class="team-photo"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80" alt="Pooja Nair, Head of Finance" loading="lazy" data-fallback></div>
-        <h4>Pooja Nair</h4><span>Head — Finance</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= TESTIMONIALS ================= -->
-<section>
-  <div class="container">
-    <div class="section-head center reveal">
-      <div class="eyebrow" style="justify-content:center">Client Success Stories</div>
-      <h2>Trusted by teams who can't afford downtime</h2>
-    </div>
-    <div class="testimonial-slider glass" style="padding:3rem 1rem;border-radius:var(--radius-lg)">
-      <div class="testimonial-track">
-        <div class="testimonial-slide">
-          <div class="t-card">
-            <div class="stars">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="cloud.html" class="nav-link">Cloud</a></li>
+          <li class="has-mega">
+            <a href="services.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+              Services
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </a>
+            <div class="mega-menu" role="menu">
+              <a href="services.html#network" class="mega-item" role="menuitem">
+                <span class="mega-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                    <circle cx="6" cy="6" r="2.5"/>
+                    <circle cx="18" cy="6" r="2.5"/>
+                    <circle cx="12" cy="18" r="2.5"/>
+                    <path d="M7.8 7.6 10.5 16M16.2 7.6 13.5 16M8.5 6h7"/>
+                  </svg>
+                </span>
+                <div>
+                  <h4>Network Infrastructure</h4>
+                  <p>Resilient enterprise networks</p>
+                </div>
+              </a>
+              <a href="services.html#cloud" class="mega-item" role="menuitem">
+                <span class="mega-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                    <path d="M7 17h10a4 4 0 0 0 .4-8 5.5 5.5 0 0 0-10.6.3A4 4 0 0 0 7 17Z"/>
+                  </svg>
+                </span>
+                <div>
+                  <h4>Cloud Solutions</h4>
+                  <p>Hybrid & multi-cloud builds</p>
+                </div>
+              </a>
+              <a href="services.html#security" class="mega-item" role="menuitem">
+                <span class="mega-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                    <path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/>
+                    <path d="M9.5 12l2 2 3.5-4"/>
+                  </svg>
+                </span>
+                <div>
+                  <h4>Cyber Security</h4>
+                  <p>Threat defense & compliance</p>
+                </div>
+              </a>
+              <a href="services.html#firewall" class="mega-item" role="menuitem">
+                <span class="mega-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                    <rect x="4" y="4" width="16" height="16" rx="2"/>
+                    <path d="M4 9h16M9 9v11"/>
+                  </svg>
+                </span>
+                <div>
+                  <h4>Firewall Solutions</h4>
+                  <p>Perimeter & app-layer defense</p>
+                </div>
+              </a>
+              <a href="services.html#managed" class="mega-item" role="menuitem">
+                <span class="mega-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M19.4 13a7.6 7.6 0 0 0 0-2l2-1.5-2-3.4-2.3.9a7.7 7.7 0 0 0-1.7-1l-.3-2.5h-4l-.3 2.5a7.7 7.7 0 0 0-1.7 1l-2.3-.9-2 3.4 2 1.5a7.6 7.6 0 0 0 0 2l-2 1.6 2 3.4 2.3-.9c.5.4 1.1.8 1.7 1l.3 2.4h4l.3-2.4c.6-.2 1.2-.6 1.7-1l2.3.9 2-3.4-2-1.6Z"/>
+                  </svg>
+                </span>
+                <div>
+                  <h4>Managed IT Services</h4>
+                  <p>Proactive 24/7 operations</p>
+                </div>
+              </a>
+              <a href="services.html#datacenter" class="mega-item" role="menuitem">
+                <span class="mega-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                    <rect x="5" y="3" width="14" height="8" rx="1.5"/>
+                    <rect x="5" y="13" width="14" height="8" rx="1.5"/>
+                    <path d="M8 7h.01M8 17h.01"/>
+                  </svg>
+                </span>
+                <div>
+                  <h4>Data Center Solutions</h4>
+                  <p>High-availability infrastructure</p>
+                </div>
+              </a>
             </div>
-            <p class="t-quote">Deep Mind re-architected our entire branch network in under six weeks with zero disruption to operations. Their team thinks like an extension of ours, not a vendor.</p>
-            <div class="t-person">
-              <div class="t-avatar"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=120&q=80" alt="Client portrait" loading="lazy" data-fallback></div>
-              <div><div class="t-name">Sandeep Kapoor</div><div class="t-role">CIO, TechFlow Industries</div></div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-slide">
-          <div class="t-card">
-            <div class="stars">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
-            </div>
-            <p class="t-quote">Their managed security team caught a credential-stuffing attempt on our VPN before it became an incident. The reporting alone justified the contract.</p>
-            <div class="t-person">
-              <div class="t-avatar"><img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=120&q=80" alt="Client portrait" loading="lazy" data-fallback></div>
-              <div><div class="t-name">Ritika Anand</div><div class="t-role">Head of IT, Globalcore Retail</div></div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-slide">
-          <div class="t-card">
-            <div class="stars">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
-            </div>
-            <p class="t-quote">We moved 40 servers to a hybrid cloud setup over a single weekend with no client-facing downtime. Planning and execution were flawless.</p>
-            <div class="t-person">
-              <div class="t-avatar"><img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=120&q=80" alt="Client portrait" loading="lazy" data-fallback></div>
-              <div><div class="t-name">Manav Joshi</div><div class="t-role">VP Engineering, Infralink</div></div>
-            </div>
-          </div>
-        </div>
+          </li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="clintele.html" class="nav-link">Clientele</a></li>
+          <li><a href="contact.html" class="nav-link">Career</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-ghost btn-sm"><span>Talk to an Expert</span></a>
+        <a href="contact.html" class="btn btn-primary btn-sm"><span>Book a Demo</span></a>
       </div>
-      <div class="t-dots"></div>
+
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-panel">
+        <span></span>
+      </button>
     </div>
-  </div>
-</section>
+  </header>
 
-<!-- ================= CTA BANNER ================= -->
-<section>
-  <div class="container reveal">
-    <div class="cta-banner">
-      <h2>Let's Build Your Digital Advantage</h2>
-      <p>Talk to our solutions architects and get a tailored roadmap for your cloud, network and security needs — no obligation, just clarity.</p>
-      <div class="btn-row">
-        <a href="contact.html" class="btn btn-primary"><span>Get in Touch</span></a>
-        <a href="services.html" class="btn btn-ghost"><span>Explore Solutions</span></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<!-- ================= FOOTER ================= -->
-<footer>
-  <div class="container">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="index.html" class="brand">
-          <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.5 4 4 0 0 0 7 17Z" stroke="white" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="13" r="1.3" fill="white"/></svg></span>
-          <span class="brand-text">Deep Mind<small>IT Solutions</small></span>
-        </a>
-        <p>Enterprise cloud, cyber security and network infrastructure built to move your business forward — securely, reliably, at scale.</p>
-        <div class="social-row">
-          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM9 9h4v1.7c.6-1 1.8-2 3.7-2 3 0 4.3 2 4.3 5.3V21h-4v-6.3c0-1.5-.5-2.5-1.9-2.5-1 0-1.6.7-1.9 1.4-.1.3-.1.7-.1 1V21H9z"/></svg></a>
-          <a href="#" aria-label="X / Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h4.4l4 5.6L16 3h4.6l-6.4 8.4L21 21h-4.5l-4.3-6-5 6H2.6l6.8-8.9L3 3z"/></svg></a>
-          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7h2.4l.4-3H13.5V9c0-.9.3-1.5 1.7-1.5h1.4V4.8C16.2 4.7 15.1 4.6 14 4.6c-2.5 0-4.2 1.5-4.2 4.2v2.2H7.4v3h2.4v7Z"/></svg></a>
-          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h5>Company</h5>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="clintele.html">Clientele</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="footer-col">
-        <h5>Solutions</h5>
-        <a href="cloud.html">Cloud Computing</a>
-        <a href="services.html#security">Cyber Security</a>
+  <!-- ================= MOBILE NAV ================= -->
+  <div class="mobile-scrim" aria-hidden="true"></div>
+  <nav class="mobile-panel" id="mobile-panel" aria-label="Mobile navigation">
+    <a href="index.html" class="m-link">Home</a>
+    <a href="about.html" class="m-link">About</a>
+    <a href="cloud.html" class="m-link">Cloud</a>
+    <div class="m-group">
+      <a href="#" class="m-link" aria-expanded="false">
+        Services
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M6 9l6 6 6-6"/>
+        </svg>
+      </a>
+      <div class="m-sub">
         <a href="services.html#network">Network Infrastructure</a>
-        <a href="services.html#managed">Managed IT</a>
-      </div>
-      <div class="footer-col">
-        <h5>Resources</h5>
-        <a href="products.html">Product Catalog</a>
-        <a href="products.html">Firewall Solutions</a>
-        <a href="contact.html">Support</a>
-        <a href="contact.html">FAQs</a>
-      </div>
-      <div class="footer-col">
-        <h5>Stay Updated</h5>
-        <p style="font-size:.85rem;margin-bottom:.8rem">Infrastructure insights, monthly. No noise.</p>
-        <form class="newsletter-form" data-validate>
-          <input type="email" placeholder="Work email" required>
-          <button type="submit" aria-label="Subscribe"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-        </form>
+        <a href="services.html#cloud">Cloud Solutions</a>
+        <a href="services.html#security">Cyber Security</a>
+        <a href="services.html#firewall">Firewall Solutions</a>
+        <a href="services.html#managed">Managed IT Services</a>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© <span class="js-year"></span> Deep Mind IT Solutions. All rights reserved.</span>
-      <div>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms &amp; Conditions</a>
+    <a href="products.html" class="m-link">Products</a>
+    <a href="clintele.html" class="m-link">Clientele</a>
+    <a href="contact.html" class="m-link">Career</a>
+    <a href="contact.html" class="m-link">Contact</a>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-ghost"><span>Talk to an Expert</span></a>
+      <a href="contact.html" class="btn btn-primary"><span>Book a Demo</span></a>
+    </div>
+  </nav>
+
+  <main id="main-content" class="page-fade">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <canvas class="particle-canvas" aria-hidden="true"></canvas>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow">Smart Solutions, Stronger Businesses</div>
+          <h1>
+            <span class="line-reveal"><span>Empowering Your</span></span>
+            <span class="line-reveal"><span class="gradient-wave-text">Digital Future</span></span>
+          </h1>
+          <p class="hero-sub">End-to-end IT infrastructure, cloud, network, security and AV solutions that drive growth, resilience and innovation for the modern enterprise.</p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-primary">
+              <span>Book a Demo</span>
+              <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </a>
+            <a href="services.html" class="btn btn-ghost"><span>Explore Solutions</span></a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-num"><span data-count="15">0</span><span>+</span></div>
+              <div class="stat-label">Years of Excellence</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num"><span data-count="500">0</span><span>+</span></div>
+              <div class="stat-label">Projects Delivered</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num"><span data-count="200">0</span><span>+</span></div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">24<span>/7</span></div>
+              <div class="stat-label">Support Available</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-visual-panel glass glow-border">
+            <div class="hero-globe-wrap">
+              <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80" alt="IT infrastructure and data center" loading="lazy" data-fallback>
+              <div class="hero-globe-overlay"></div>
+              <div class="hero-badge">Secure Cloud</div>
+              <div class="hero-info-card">
+                <span class="hero-info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
+                    <path d="M7 17h10a4 4 0 0 0 .4-8 5.5 5.5 0 0 0-10.6.3A4 4 0 0 0 7 17Z"/>
+                  </svg>
+                </span>
+                <div>
+                  <div class="hero-info-label">Live Infrastructure</div>
+                  <div class="hero-info-value">99.98% Uptime</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-card glass fc-1">
+            <span class="ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
+                <path d="M12 3v4M12 17v4M5 12H1M23 12h-4M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8M18.4 18.4l-2.8-2.8M8.4 8.4 5.6 5.6"/>
+              </svg>
+            </span>
+            <div>
+              <h5>Network Uptime</h5>
+              <p>99.98% guaranteed SLA</p>
+            </div>
+          </div>
+          <div class="floating-card glass fc-2">
+            <span class="ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
+                <path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/>
+              </svg>
+            </span>
+            <div>
+              <h5>Threats Blocked</h5>
+              <p>2.4M+ this month</p>
+            </div>
+          </div>
+          <div class="floating-card glass fc-3">
+            <span class="ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
+                <path d="M7 17h10a4 4 0 0 0 .4-8 5.5 5.5 0 0 0-10.6.3A4 4 0 0 0 7 17Z"/>
+              </svg>
+            </span>
+            <div>
+              <h5>Cloud Migration</h5>
+              <p>Zero downtime delivery</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TRUSTED BY MARQUEE ================= -->
+    <section class="section-trusted">
+      <div class="container reveal">
+        <p class="text-center section-label">Trusted by forward-thinking teams across industries</p>
+      </div>
+      <div class="marquee-wrap">
+        <div class="marquee-track">
+          <span class="client-logo">TechFlow</span>
+          <span class="client-logo">Innovatek</span>
+          <span class="client-logo">GlobalCore</span>
+          <span class="client-logo">Nexora</span>
+          <span class="client-logo">Infralink</span>
+          <span class="client-logo">Veridian</span>
+          <span class="client-logo">Skyline</span>
+          <span class="client-logo">Prime Systems</span>
+          <span class="client-logo">Dataviz</span>
+          <span class="client-logo">Alphatech</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CORE SERVICES ================= -->
+    <section id="services">
+      <div class="container">
+        <div class="section-head center reveal">
+          <div class="eyebrow">Our Core Services</div>
+          <h2>Built for performance, secured by design</h2>
+          <p>A full-stack of enterprise IT capabilities — from the network layer to the application layer — engineered to keep your business resilient, fast and protected.</p>
+        </div>
+
+        <div class="grid grid-3 reveal-stagger">
+          <a href="services.html#network" class="card shine-hover">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <circle cx="6" cy="6" r="2.5"/>
+                <circle cx="18" cy="6" r="2.5"/>
+                <circle cx="12" cy="18" r="2.5"/>
+                <path d="M7.8 7.6 10.5 16M16.2 7.6 13.5 16M8.5 6h7"/>
+              </svg>
+            </div>
+            <h3>Network Infrastructure</h3>
+            <p>Resilient, future-ready networks engineered for low latency and zero-compromise reliability at enterprise scale.</p>
+            <span class="card-link">
+              Learn more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </span>
+          </a>
+          <a href="cloud.html" class="card shine-hover">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path d="M7 17h10a4 4 0 0 0 .4-8 5.5 5.5 0 0 0-10.6.3A4 4 0 0 0 7 17Z"/>
+              </svg>
+            </div>
+            <h3>Cloud Solutions</h3>
+            <p>Hybrid and multi-cloud architectures that scale on demand while keeping cost, performance and governance in balance.</p>
+            <span class="card-link">
+              Learn more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </span>
+          </a>
+          <a href="services.html#security" class="card shine-hover">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/>
+                <path d="M9.5 12l2 2 3.5-4"/>
+              </svg>
+            </div>
+            <h3>Cyber Security</h3>
+            <p>Layered threat defense, continuous monitoring and compliance-ready controls that protect what matters most.</p>
+            <span class="card-link">
+              Learn more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </span>
+          </a>
+          <a href="services.html#datacenter" class="card shine-hover">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <rect x="5" y="3" width="14" height="8" rx="1.5"/>
+                <rect x="5" y="13" width="14" height="8" rx="1.5"/>
+                <path d="M8 7h.01M8 17h.01"/>
+              </svg>
+            </div>
+            <h3>Data Center Solutions</h3>
+            <p>High-availability infrastructure design, virtualization and disaster recovery built for business continuity.</p>
+            <span class="card-link">
+              Learn more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </span>
+          </a>
+          <a href="services.html#managed" class="card shine-hover">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M19.4 13a7.6 7.6 0 0 0 0-2l2-1.5-2-3.4-2.3.9a7.7 7.7 0 0 0-1.7-1l-.3-2.5h-4l-.3 2.5a7.7 7.7 0 0 0-1.7 1l-2.3-.9-2 3.4 2 1.5a7.6 7.6 0 0 0 0 2l-2 1.6 2 3.4 2.3-.9c.5.4 1.1.8 1.7 1l.3 2.4h4l.3-2.4c.6-.2 1.2-.6 1.7-1l2.3.9 2-3.4-2-1.6Z"/>
+              </svg>
+            </div>
+            <h3>Managed IT Services</h3>
+            <p>Proactive monitoring, helpdesk and infrastructure management so your team stays focused on the business.</p>
+            <span class="card-link">
+              Learn more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </span>
+          </a>
+          <a href="services.html#software" class="card shine-hover">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path d="M4 4h16v12H4z"/>
+                <path d="M9 20h6M12 16v4"/>
+              </svg>
+            </div>
+            <h3>Software & App Development</h3>
+            <p>Custom web, mobile and enterprise software engineered around your workflows, not the other way around.</p>
+            <span class="card-link">
+              Learn more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+
+        <div class="text-center mt-2">
+          <a href="services.html" class="btn btn-ghost">
+            <span>View All Services</span>
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY CHOOSE US SPLIT ================= -->
+    <section>
+      <div class="container split">
+        <div class="reveal">
+          <div class="media-frame">
+            <img src="https://images.unsplash.com/photo-1573164574511-73c773193279?w=1000&q=80" alt="Enterprise data center with illuminated server racks" loading="lazy" data-fallback>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="eyebrow">Why Enterprises Choose Us</div>
+          <h2>Infrastructure that scales as fast as your ambition</h2>
+          <p class="section-description">We pair certified engineering talent with vendor-grade tooling — Fortinet, Cisco, Palo Alto and AWS among them — to build IT environments that hold up under real-world load.</p>
+          <ul class="checklist">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 13l4 4L19 7"/>
+              </svg>
+              Certified engineers across networking, cloud and security
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 13l4 4L19 7"/>
+              </svg>
+              24/7 monitoring with proactive incident response
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 13l4 4L19 7"/>
+              </svg>
+              Vendor-neutral architecture tailored to your stack
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 13l4 4L19 7"/>
+              </svg>
+              Transparent SLAs and measurable outcomes
+            </li>
+          </ul>
+          <a href="about.html" class="btn btn-primary mt-2">
+            <span>More About Us</span>
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRODUCT CATEGORIES ================= -->
+    <section>
+      <div class="container">
+        <div class="section-head center reveal">
+          <div class="eyebrow">Popular Product Categories</div>
+          <h2>Enterprise-grade hardware, sourced and supported</h2>
+          <p>From core infrastructure to AV and surveillance, we supply, deploy and support the equipment your business runs on.</p>
+        </div>
+        <div class="grid grid-4 reveal-stagger">
+          <a href="products.html#servers" class="card text-center shine-hover">
+            <div class="card-icon" style="margin-inline:auto">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <rect x="4" y="4" width="16" height="6" rx="1"/>
+                <rect x="4" y="14" width="16" height="6" rx="1"/>
+                <path d="M7 7h.01M7 17h.01"/>
+              </svg>
+            </div>
+            <h3>Servers & Storage</h3>
+          </a>
+          <a href="products.html#network" class="card text-center shine-hover">
+            <div class="card-icon" style="margin-inline:auto">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <rect x="3" y="9" width="18" height="6" rx="1"/>
+                <path d="M7 15v3M12 15v3M17 15v3"/>
+              </svg>
+            </div>
+            <h3>Switches / Router / Wi-Fi</h3>
+          </a>
+          <a href="products.html#firewall" class="card text-center shine-hover">
+            <div class="card-icon" style="margin-inline:auto">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/>
+              </svg>
+            </div>
+            <h3>Firewall</h3>
+          </a>
+          <a href="products.html#av" class="card text-center shine-hover">
+            <div class="card-icon" style="margin-inline:auto">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="12" rx="1.5"/>
+                <path d="M8 21h8M12 17v4"/>
+              </svg>
+            </div>
+            <h3>LEDs & Interactive Panels</h3>
+          </a>
+          <a href="products.html#av" class="card text-center shine-hover">
+            <div class="card-icon" style="margin-inline:auto">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path d="M3 17l5-10 4 6 3-4 6 8"/>
+                <circle cx="12" cy="6" r="1.4"/>
+              </svg>
+            </div>
+            <h3>AV Solutions & KVM Switches</h3>
+          </a>
+          <a href="products.html#ups" class="card text-center shine-hover">
+            <div class="card-icon" style="margin-inline:auto">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/>
+              </svg>
+            </div>
+            <h3>UPS Power</h3>
+          </a>
+          <a href="products.html#projectors" class="card text-center shine-hover">
+            <div class="card-icon" style="margin-inline:auto">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <rect x="2" y="7" width="14" height="9" rx="2"/>
+                <circle cx="9" cy="11.5" r="2.4"/>
+                <path d="M16 10l6-2v8l-6-2Z"/>
+              </svg>
+            </div>
+            <h3>Projectors</h3>
+          </a>
+          <a href="products.html#cctv" class="card text-center shine-hover">
+            <div class="card-icon" style="margin-inline:auto">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path d="M3 7l8-3 8 3v3l-8 3-8-3Z"/>
+                <path d="M11 13v7M9 21h6"/>
+              </svg>
+            </div>
+            <h3>CCTV Surveillance</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INDUSTRIES WE SERVE ================= -->
+    <section class="section-industries">
+      <div class="container glass">
+        <div class="section-head reveal">
+          <div class="eyebrow">Industries We Serve</div>
+          <h2>Domain-aware IT, not one-size-fits-all</h2>
+        </div>
+        <div class="grid grid-4 reveal-stagger">
+          <div class="pill">Corporate</div>
+          <div class="pill">Education</div>
+          <div class="pill">Healthcare</div>
+          <div class="pill">Manufacturing</div>
+          <div class="pill">Government</div>
+          <div class="pill">Retail</div>
+          <div class="pill">BFSI</div>
+          <div class="pill">Hospitality</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TEAM TEASER ================= -->
+    <section>
+      <div class="container">
+        <div class="section-head center reveal">
+          <div class="eyebrow">Meet Our Core Team</div>
+          <h2>The people behind every deployment</h2>
+        </div>
+        <div class="grid grid-4 reveal-stagger">
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="Rakesh Sharma, Managing Director" loading="lazy" data-fallback>
+            </div>
+            <h4>Rakesh Sharma</h4>
+            <span>Managing Director</span>
+          </div>
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=80" alt="Neha Verma, Director Operations" loading="lazy" data-fallback>
+            </div>
+            <h4>Neha Verma</h4>
+            <span>Director — Operations</span>
+          </div>
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&q=80" alt="Arjun Mehta, Head of Solutions" loading="lazy" data-fallback>
+            </div>
+            <h4>Arjun Mehta</h4>
+            <span>Head — Solutions</span>
+          </div>
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80" alt="Pooja Nair, Head of Finance" loading="lazy" data-fallback>
+            </div>
+            <h4>Pooja Nair</h4>
+            <span>Head — Finance</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section>
+      <div class="container">
+        <div class="section-head center reveal">
+          <div class="eyebrow">Client Success Stories</div>
+          <h2>Trusted by teams who can't afford downtime</h2>
+        </div>
+        <div class="testimonial-slider glass reveal">
+          <div class="testimonial-track">
+            <div class="testimonial-slide">
+              <div class="t-card">
+                <div class="stars" aria-label="5 out of 5 stars">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
+                </div>
+                <p class="t-quote">Deep Mind re-architected our entire branch network in under six weeks with zero disruption to operations. Their team thinks like an extension of ours, not a vendor.</p>
+                <div class="t-person">
+                  <div class="t-avatar">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=120&q=80" alt="Sandeep Kapoor" loading="lazy" data-fallback>
+                  </div>
+                  <div>
+                    <div class="t-name">Sandeep Kapoor</div>
+                    <div class="t-role">CIO, TechFlow Industries</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="t-card">
+                <div class="stars" aria-label="5 out of 5 stars">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
+                </div>
+                <p class="t-quote">Their managed security team caught a credential-stuffing attempt on our VPN before it became an incident. The reporting alone justified the contract.</p>
+                <div class="t-person">
+                  <div class="t-avatar">
+                    <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=120&q=80" alt="Ritika Anand" loading="lazy" data-fallback>
+                  </div>
+                  <div>
+                    <div class="t-name">Ritika Anand</div>
+                    <div class="t-role">Head of IT, Globalcore Retail</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="t-card">
+                <div class="stars" aria-label="5 out of 5 stars">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.5 4.7L18 22l-6-3.8L6 22l1.5-7.7L2 9.6 9 9z"/></svg>
+                </div>
+                <p class="t-quote">We moved 40 servers to a hybrid cloud setup over a single weekend with no client-facing downtime. Planning and execution were flawless.</p>
+                <div class="t-person">
+                  <div class="t-avatar">
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=120&q=80" alt="Manav Joshi" loading="lazy" data-fallback>
+                  </div>
+                  <div>
+                    <div class="t-name">Manav Joshi</div>
+                    <div class="t-role">VP Engineering, Infralink</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="t-dots" role="tablist" aria-label="Testimonial navigation"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA BANNER ================= -->
+    <section>
+      <div class="container reveal">
+        <div class="cta-banner">
+          <h2>Let's Build Your Digital Advantage</h2>
+          <p>Talk to our solutions architects and get a tailored roadmap for your cloud, network and security needs — no obligation, just clarity.</p>
+          <div class="btn-row">
+            <a href="contact.html" class="btn btn-primary"><span>Get in Touch</span></a>
+            <a href="services.html" class="btn btn-ghost"><span>Explore Solutions</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <span class="brand-mark">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M7 17h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.5 4 4 0 0 0 7 17Z" stroke="white" stroke-width="1.6" stroke-linejoin="round"/>
+                <circle cx="12" cy="13" r="1.3" fill="white"/>
+              </svg>
+            </span>
+            <span class="brand-text">Deep Mind<small>IT Solutions</small></span>
+          </a>
+          <p>Enterprise cloud, cyber security and network infrastructure built to move your business forward — securely, reliably, at scale.</p>
+          <div class="social-row">
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM9 9h4v1.7c.6-1 1.8-2 3.7-2 3 0 4.3 2 4.3 5.3V21h-4v-6.3c0-1.5-.5-2.5-1.9-2.5-1 0-1.6.7-1.9 1.4-.1.3-.1.7-.1 1V21H9z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="X / Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M3 3h4.4l4 5.6L16 3h4.6l-6.4 8.4L21 21h-4.5l-4.3-6-5 6H2.6l6.8-8.9L3 3z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M13.5 21v-7h2.4l.4-3H13.5V9c0-.9.3-1.5 1.7-1.5h1.4V4.8C16.2 4.7 15.1 4.6 14 4.6c-2.5 0-4.2 1.5-4.2 4.2v2.2H7.4v3h2.4v7Z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5"/>
+                <circle cx="12" cy="12" r="3.6"/>
+                <circle cx="17.2" cy="6.8" r="1"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="clintele.html">Clientele</a>
+          <a href="contact.html">Careers</a>
+        </div>
+        <div class="footer-col">
+          <h5>Solutions</h5>
+          <a href="cloud.html">Cloud Computing</a>
+          <a href="services.html#security">Cyber Security</a>
+          <a href="services.html#network">Network Infrastructure</a>
+          <a href="services.html#managed">Managed IT</a>
+        </div>
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <a href="products.html">Product Catalog</a>
+          <a href="products.html">Firewall Solutions</a>
+          <a href="contact.html">Support</a>
+          <a href="contact.html">FAQs</a>
+        </div>
+        <div class="footer-col">
+          <h5>Stay Updated</h5>
+          <p class="newsletter-description">Infrastructure insights, monthly. No noise.</p>
+          <form class="newsletter-form" data-validate>
+            <input type="email" placeholder="Work email" required aria-label="Email for newsletter">
+            <button type="submit" aria-label="Subscribe to newsletter">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span class="js-year"></span> Deep Mind IT Solutions. All rights reserved.</span>
+        <div>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<button class="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
 
-<script src="./main.js"></script>
-<script src="./animation.js"></script>
-<script src="./mobile-menu.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="js/mobile-menu.js"></script>
 </body>
 </html>
